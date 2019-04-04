@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{padding: 0;margin: 0;}
+		li{list-style: none;}
+		body{background-image:url(../images/bg_grid.gif);}
+
+		ul.nav{width: 1000px;margin:0px auto;}
+		ul.nav:after{content:"";clear:both;display:block;}
+		ul.nav > li{
+			float:left;width:200px;
+			background-color: gray;
+			height: 50px;text-align: center;
+			line-height:50px;
+		}
+		ul.nav > li:nth-child(2n){background-color: skyblue;}
+
+	</style>
+</head>
+<body>
+	<!-- ul.nav>li*5>{menu$} -->
+	<ul class="nav">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+	</ul>
+</body>
+</html>
