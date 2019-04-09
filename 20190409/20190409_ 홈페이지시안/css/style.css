@@ -12,6 +12,18 @@
 		#gnb>ul>li>a{display:block; line-height: 20px; padding: 0 10px;}
 
 /*logo_wrap*/
-#logo_wrap{width:980px;height:60px;margin:0 auto; background-color: #f00; position:relative; padding-top: 5px;}
+#logo_wrap{width:980px;height:60px;margin:0 auto; position:relative; padding-top: 5px;}
 #logo_wrap>h1{width:250px;margin:0 auto; text-align:center; }
 #logo_wrap>div.toggle{position: absolute; top:5px;right:0;}
+
+/*main lnb*/
+#main_lnb_wrap{background: #1c5da3;}
+#main_lnb{width:980px; margin:0 auto;}
+	
+	#lnb>ul{width:100%;}
+	#lnb>ul>li{float:left; width:16.66%;
+				border-right: 1px solid #336eac;}
+	#lnb>ul>li:first-child{border-left}
+	#lnb>ul>li>a{display:block;line-height: 40px; 
+				text-align: center; color:white; font-weight:bold;}
+	#lnb a:hover{background:skyblue; color:#1c5da3;}
