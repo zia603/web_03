@@ -28,16 +28,28 @@
 		.sub{width:100%;}
 		.sub>li{text-align: center; line-height:30px;}
 
+
 		.visual_wrap{height:400px; background: gray;}
 
-		section.content{width:1000px; margin:20px auto;}
+
+
+		section.content{width:1000px; margin:50px auto;}
+		section.content>h3{text-align: center;padding-bottom: 15px; }
+		section.content>h3:after{content:"";display:block; background: lightgray; width:100px; height:1px; margin:10px auto; }
+		section.content>p{text-align: center; margin:0 auto;padding-bottom:50px}
 		section.content>ul{}
 		section.content>ul>li{float:left; width:240px; margin-right:13.33px;}
 		section.content>ul>li:last-child{margin-right:0;}
 		section.content>ul>li img{width:100%;display:block;}
 		section.content>ul>li .card_text{padding:15px; background: #cdcdcd;}
 
-		.content2_wrap{background: skyblue; padding:20px ; margin-bottom: 20px;} /*왠만하면 마진bottom으로 간격 띄우기*/
+
+
+		.content2_wrap{background: skyblue; padding:20px ; margin-bottom: 70px;} /*왠만하면 마진bottom으로 간격 띄우기*/
+
+		section.content2>h3{ text-align: center; padding-bottom: 10px}
+		section.content2>h3:after{content:""; display: block; width: 150px; height:2px; background: orange; margin:10px auto;} /*겔러리 글씨 밑의 선*/
+		section.content2>p{text-align: center; margin-bottom: 50px}
 	section.content2{width:1000px; margin:0 auto;}
 	section.content2>ul{}
 	section.content2>ul>li{float: left; width:240px;margin-right:13.33px;}
@@ -48,7 +60,10 @@
 
 
 		
-	section.content3{width:1000px; margin:20px auto;}
+	section.content3{width:1000px; margin:0px auto; margin-bottom: 40px;}
+		section.content3>h3{ text-align: center; padding-bottom: 10px}
+		section.content3>h3:after{content:""; display: block; width: 150px; height:2px; background: gray; margin:10px auto;} /*겔러리 글씨 밑의 선*/
+		section.content3>p{text-align: center; margin-bottom: 50px}
 		section.content3>ul{}
 		section.content3>ul>li{float:left; width:240px; margin-right:13.33px;cursor: pointer; border-radius: 10px;}
 		section.content3>ul>li:last-child{margin-right:0;}
@@ -116,6 +131,8 @@
 	<div class="visual_wrap"></div>
 	
 	<section class="content">
+		<h3>GALLERY</h3>
+	<p>welcome thank you for visiting our gallery</p>
 		<ul class="clearfix">
 			<li>
 				<div class="card">
@@ -161,6 +178,8 @@
 
     <section class="content2_wrap">
 <section class="content2">
+	<h3>GALLERY</h3>
+	<p>welcome thank you for visiting our gallery</p>
 	<ul class="clearfix">
 		<li>
 			<div class="card">
@@ -203,7 +222,10 @@
 </section>
 
 <section class="content3">
+	<h3>GALLERY</h3>
+	<p>welcome thank you for visiting our gallery</p>
 		<ul class="clearfix">
+			
 			<li>
 				<div class="card">
 					<img src="../images/testimg.jpg" alt="">
