@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+
+	<style>
+		*{margin:0 auto; padding:0; box-sizing:border-box;}
+		li{list-style: none}
+		a:link,a:visited{text-decoration:none; color:#000;}
+		.clearfix:after{content:""; display:block; clear:both;}
+
+		div.menu_wrap{}
+		div.menu_wrap>ul{width:1000px;
+						 margin:0 auto;
+						 height: 40px;}
+		div.menu_wrap>ul>li{float:left; background:green;}
+		div.menu_wrap>ul>li>a{display: block;
+							  line-height: 40px;
+							  width:200px;
+							  text-align:center;
+							  font-weight: bold;}
+		div.menu_wrap>ul>li:hover{background:orange;}
+		div.menu_wrap>ul>li:hover>a{color: white;}
+		div.menu_wrap>ul:hover .sub{display: block;}
+
+		div.menu_wrap>ul .sub{display: none;}
+		.sub{width:100%;}
+		.sub>li{text-align: center; line-height:30px;}
+
+		.visual_wrap{height:400px; background: gray;}
+
+		section.content{width:1000px; margin:20px auto;}
+		section.content>ul{}
+		section.content>ul>li{float:left; width:240px; margin-right:13.33px;}
+		section.content>ul>li:last-child{margin-right:0;}
+		section.content>ul>li img{width:100%;display:block;}
+		section.content>ul>li .card_text{padding:15px; background: #cdcdcd;}
+
+		.content2_wrap{background: skyblue; padding:20px ; margin-bottom: 20px;} /*왠만하면 마진bottom으로 간격 띄우기*/
+	section.content2{width:1000px; margin:0 auto;}
+	section.content2>ul{}
+	section.content2>ul>li{float: left; width:240px;margin-right:13.33px;}
+	section.content2>ul>li:last-child{margin-right:0;}
+	section.content2>ul>li img{border-radius:150px; display:block; width:100%;}
+	section.content2>ul>li .card_text{padding:15px; background: #cdcdcd; text-align:center;}
+
+
+
+		
+	section.content3{width:1000px; margin:20px auto;}
+		section.content3>ul{}
+		section.content3>ul>li{float:left; width:240px; margin-right:13.33px;cursor: pointer; border-radius: 10px;}
+		section.content3>ul>li:last-child{margin-right:0;}
+		section.content3>ul>li>.card{position: relative;}
+
+		section.content3>ul>li img{width:100%; display:block;}
+		section.content3>ul>li .card_text{background:rgba(0,0,0,0.5);
+			position: absolute; top:100%; left:0; width:100%; height: 100%;color:white;
+			padding-top: 90px;transition:0.3s;}
+			section.content3 .card_text>h4,
+			section.content3 .card_text>p{text-align: center;}
+			section.content3 .card_text{opacity: 0;}
+		section.content3 li:hover .card_text{display: block; opacity: 1; top:0;}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="menu_wrap">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a>
+				<ul class="sub">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</li>
+
+						<li><a href="#">menu2</a>
+				<ul class="sub">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</li>
+
+						<li><a href="#">menu3</a>
+				<ul class="sub">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</li>
+
+						<li><a href="#">menu4</a>
+				<ul class="sub">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</li>
+
+						<li><a href="#">menu5</a>
+				<ul class="sub">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</li>
+
+		</ul>		
+	</div>
+
+	<div class="visual_wrap"></div>
+	
+	<section class="content">
+		<ul class="clearfix">
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+		</ul>		
+    </section>
+
+    <section class="content2_wrap">
+<section class="content2">
+	<ul class="clearfix">
+		<li>
+			<div class="card">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card_text">
+					<h4>mr.han</h4>
+					<p>Architect & enginner</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card_text">
+					<h4>mr.han</h4>
+					<p>Architect & enginner</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card_text">
+					<h4>mr.han</h4>
+					<p>Architect & enginner</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card_text">
+					<h4>mr.han</h4>
+					<p>Architect & enginner</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+</section>
+
+<section class="content3">
+		<ul class="clearfix">
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_text">
+						<h4>hello</h4>
+						<p>good to see you</p>
+					</div>
+				</div>
+			</li>
+		</ul>		
+    </section>
+	
+</body> 
+</html>
