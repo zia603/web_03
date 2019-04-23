@@ -30,16 +30,16 @@
 
 /*visual_lab	*/
 #visual_wrap{
-			height:400px;
+			height:400px; overflow: hidden;
 			background:#203969 url(../images/visual_bg.jpg) 
 			no-repeat center;
 			}
 div.visual{width:980px; height:400px; 
-			margin:0 auto; position:relative; overflow:hidden;}
-div.visual img{position:absolute;}
+			margin:0 auto; /*position:relative; overflow:hidden;*/}
+/*div.visual img{position:absolute;}
 div.visual .img01{bottom:-100px; right:0;}
 div.visual .img02{left:0; top:70px;}
-
+*/
 /*section main_banner*/
 section.main_banner{background: #eeeeee;}
 section.main_banner .banner{width:980px;margin:0 auto;}
@@ -83,8 +83,13 @@ section.sec_article>ul>li img{float:right; width:150px; margin-top: 30px; margin
 
 div.footerbar1{width:100%;background:#094;}
 div.footerbar1>.bar1{width:980px;margin:0 auto;}
-div.footerbar1 ul{}
+div.footerbar1 ul{float:left;position: relative;}
 div.footerbar1 ul>li{float:left;padding:10px; font-size: 13px; color:white;}
+div.footerbar1 ul>li:after{content:"";display: block;position:absolute;
+							width:2px; height:12px;
+							top:14px;background:#fff;right:0;}
+div.footerbar1 #top_button{color: white; float:right;}
+div.footerbar1 #top_button>p{font-size:12px;padding-right:3px;}
 
 div.footerbar2{width:100%;background:#077;}
 div.footerbar2>.bar2{width:980px;margin:0 auto; padding-top:10px}
@@ -92,3 +97,13 @@ div.footerbar2 ul{}
 div.footerbar2 ul>h2{float:left;padding:27px 10px ;color: white; text-align: center;}
 div.footerbar2 ul>li{float:left;padding:10px; padding-left:50px;font-size: 12px; color:lightgray;}
 
+#main_footer{}
+#footer_nav{background:#4d4d4d; height:40px;}
+.footer_menu{width:980px;margin:0 auto; position: relative;}
+.footer_menu>ul{position: absolute;}
+.footer_menu>.top_button{position: absolute; right:0;}
+.footer_menu>ul>li{float:left;}
+.footer_menu>ul>li:after{content:"";display: block;position:absolute;
+							width:20px; height:12px;
+							top:14px;background:#fff;right:0;}
+.footer_menu>ul>li>a{display: block; line-height:40px;color: #dadada;padding:0 18px;}
